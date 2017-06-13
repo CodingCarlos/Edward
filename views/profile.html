@@ -30,6 +30,7 @@
                 <a class="mdl-navigation__link" href="">Link</a>
             </nav>
         </div> -->
+
         <main class="mdl-layout__content">
             <div class="page-content">  
                 <div class="upper-header">
@@ -38,18 +39,36 @@
                     <h2>{{::User.user.data.name}}</h2>
                 </div>
 
-                <ul>
-                    <li ng-repeat="skill in User.skill.list" ng-if="skill.enabled">
-                        {{skill.name}}
-                    </li>
-                </ul>
-                
-                <!-- <div class="grey-toast">
-                    <span>Bienvenido a tu nuevo currículum.</span>
-                </div> -->
-                
+                <div class="skill-block-center">
+
+                    <div class="h2">Tus habilidades:</div>
+
+                    <div ng-repeat="skill in User.skill.list" ng-if="skill.enabled" class="skill-badge-block">
+                        <div class="skill-badge">
+                            {{skill.badge}}
+                        </div><br>
+                        <strong>{{skill.name}}</strong>
+                    </div>
+
+                    <div class="skill-badge-block" style="cursor: pointer;" ng-click="add = !add;">
+                        <div class="skill-badge light">
+                            +
+                        </div><br>
+                        <strong>Añadir otra</strong>
+                    </div> <br>
+
+                    <div id="add-skill" ng-show="add == true">
+                        <h3>Add a new skill</h3>
+                        <input type="text" placeholder="node, python, MySql..." ng-model="data.skill"> <br> 
+                        <input type="text" ng-model="data.prove" placeholder="Prove: A project, repository, or URL"><br> 
+                        <button>Add</button>
+                    </div>
+
+                </div>
+
             </div>
         </main>
+
     </div>
 
 </ion-content>
