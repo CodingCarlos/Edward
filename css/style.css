@@ -1,21 +1,44 @@
-.pane {
+.mdl-layout__header-row {
+    height: 56px;
+    padding: 0 16px 0 24px;
+}
+
+.mdl-layout-title {
+    font-family: truenobold;
+}
+
+.home {
     background-color: #0037ff;
 }
 
-.modal {
-    background-color: white;
-    max-width: 400px;
-    border-radius: 25px;
-    /* height: 100vh; */
-    padding: 10%;
-    box-sizing: border-box;
-    /* position: absolute; */
-    /* text-align: center; */
-    margin: 200px 200px;
-    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+.upper-header {
+    background-color: #0037ff;
+    padding-top: 56px;
+    color: white;
 }
 
-.modal button {
+    .upper-header h2 {
+        color: white;
+        max-width: 316px;
+        display: inline-block;
+    }
+
+.upper-header img {
+    border-radius: 50%;
+    margin: 24px;
+    width: 174px;
+}
+
+.popup-container .popup {
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    width: 70%;
+    height: 42%;
+    padding: 10vh 16vw;
+    background-color: white;
+}
+
+.button.button-positive {
     border-radius: 50px;
     border: none;
     padding: 8px 12px;
@@ -29,16 +52,21 @@
     box-shadow: none;
 }
 
-.mdl-layout__header .mdl-button {
-    width: 112px;
+.profile .mdl-layout__header {
+    margin-bottom: -64px;
 }
 
-.page-content {
+.mdl-layout__header .mdl-button {
+    width: 112px;
+    color: white;
+}
+
+.home .page-content {
     margin: 48px;
 }
 
 .value-prop {
-    text-align: left;
+    text-align: center;
     margin-top: 100px;
 }
 
@@ -57,6 +85,14 @@
     .mdl-layout__header-row {
         height: 56px;
         padding: 0 16px 0 24px;
+    }
+    
+    .upper-header h2 {
+        max-width: 1000px;
+    }
+    
+    .profile .mdl-layout__header {
+        margin-bottom: -56px;
     }
     
 }
