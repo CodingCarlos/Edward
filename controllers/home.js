@@ -22,7 +22,7 @@
 				console.log(firebaseUser.user.photoURL);
 
 				user.set({
-					name: firebaseUser.user.displayName || 'Carlos Hernandez',
+					name: firebaseUser.user.displayName || 'CodingCarlos',
 					pic: firebaseUser.user.photoURL || 'https://avatars3.githubusercontent.com/u/7394623?v=3&s=200'
 				});
 

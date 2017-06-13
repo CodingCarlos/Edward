@@ -1,7 +1,7 @@
 <ion-content ng-controller="userController as User" style="text-align:center; background-color: #fff;">
 
 	<div id="register-header">
-		<span class="h1">{{'REGISTER' | translate }}</span>
+		<span class="h1">{{'REGISTER' | translate:'{ username: "' + User.user.data.name + '" }' }}</span>
 		<span class="h3">{{'REGISTER2' | translate}}</span>
 	</div>
 
