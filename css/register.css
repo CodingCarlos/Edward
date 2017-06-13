@@ -1,24 +1,26 @@
 #register-header {
 	width: 100%; 
-	height: 150px; 
+	height: 250px; 
 	background-color: #0037ff;
+    padding-top: 52px;
 }
 
-	#register-header .h1 {
+	#register-header .h1, #register-header .h3 {
 		color: #fff;
 		display: inline-block;
-		margin: 24px 0;
+        width: 100%;
 	}
 
 #register-modal {
-	background: #fff; 
-	box-shadow: 0 0 0 10px rgba(0,0,0,.2);
-	display:inline-block; 
-	margin-top: -50px; 
-	max-width: 500px; 
-	padding: 1px;
-	text-align: left;
-	width: 100vw; 
+    background: #fff;
+    box-shadow: 0px 16px 74px 0px rgba(0,0,0,0.1);
+    display: inline-block;
+    margin-top: -50px;
+    max-width: 600px;
+    padding: 16px 16px;
+    text-align: left;
+    width: 100vw;
+    border-radius: 4px;
 }
 	#register-modal .h2 {
 		display: inline-block;

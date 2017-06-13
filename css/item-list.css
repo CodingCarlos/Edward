@@ -1,7 +1,8 @@
 .item.disabled {
-	/*opacity: .5;*/
-	background-color: lightgrey;
-	color: grey;
+    /* opacity: .5; */
+    /* background-color: lightgrey; */
+    color: grey;
+    opacity: 0.3;
 }
 	.item.disabled i {
 		color: black;
@@ -19,19 +20,19 @@
 	}
 
 .skill-badge {
-	background-color: #4caf50;
-	border: 1px solid grey;
-	border-radius: 50%;
-	box-sizing: border-box;
-	color: #fff;
-	display: inline-block;
-	font-size: 18px;
-	font-weight: bold;
-	height: 64px;
-	padding-top: 21px;
-	text-align: center;
-	vertical-align: middle;
-	width: 64px;
+    background-color: #4caf50;
+    /* border: none; */
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 64px;
+    padding-top: 21px;
+    text-align: center;
+    vertical-align: middle;
+    width: 64px;
 }
 
 .skill-info {
