@@ -8,10 +8,11 @@
 	}
 
 .skill-badge {
-	background-color: #f1f033;
+	background-color: #4caf50;
 	border: 1px solid grey;
 	border-radius: 50%;
 	box-sizing: border-box;
+	color: #fff;
 	display: inline-block;
 	font-size: 18px;
 	font-weight: bold;

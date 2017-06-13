@@ -1,10 +1,10 @@
 <ion-content ng-controller="userController as User" style="text-align:center; background-color: #fff;">
 
-	<div style="width: 100%; height: 150px; background-color: #ff9800;">
+	<div style="width: 100%; height: 150px; background-color: #0037ff;">
 		<span class="h1">{{'REGISTER' | translate }}</span>
 	</div>
 
-	<div style="margin-top: -50px; width: 100vw; max-width: 500px; display:inline-block; background: #fff; z-index: 999;">
+	<div style="margin-top: -50px; width: 100vw; max-width: 500px; display:inline-block; background: #fff; padding: 4px;">
 	<!-- <div style="background: #fff; color: black;"> -->
 
 		<div>
@@ -14,7 +14,7 @@
 
 		<skill-list-element ng-repeat="skill in User.skill.list" skill="skill"></skill-list-element>
 		
-		<button ui-sref="profile({uid: 1 })">Go!</button>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ui-sref="profile({uid: 1 })">Go!</button>
 	</div>
 
 	<!-- <img ng-src="{{User.user.data.pic}}">
