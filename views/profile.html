@@ -1,13 +1,50 @@
 <ion-content ng-controller="userController as User">
-	<h1>User Profile</h1>
 
-	<img ng-src="{{User.user.data.pic}}">
-	<h2>{{::User.user.data.name}}</h2>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" ng-controller="homeController as Home">
+        <header class="mdl-layout__header" style="margin-bottom: -56px;">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">edward</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <!-- <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                </nav> -->
+                <!-- Accent-colored raised button with ripple -->
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="Home.login()">
+                    Sign in
+                </button>
+            </div>
+        </header>
+        <!-- <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">edward</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+        </div> -->
+        <main class="mdl-layout__content">
+            <div class="page-content">  
+                <div class="upper-header">
+                    <!-- <h1>User Profile</h1> -->
+                    <img ng-src="{{User.user.data.pic}}">
+                    <h2>{{::User.user.data.name}}</h2>
+                </div>
 
-	<ul>
-		<li ng-repeat="skill in User.skill.list" ng-if="skill.enabled">
-			{{skill.name}}
-		</li>
-	</ul>
+                <ul>
+                    <li ng-repeat="skill in User.skill.list" ng-if="skill.enabled">
+                        {{skill.name}}
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
 
 </ion-content>

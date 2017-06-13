@@ -1,5 +1,23 @@
-.pane {
+.home {
     background-color: #0037ff;
+}
+
+.upper-header {
+    background-color: #0037ff;
+    padding-top: 56px;
+    color: white;
+}
+
+    .upper-header h2 {
+        color: white;
+        max-width: 316px;
+        display: inline-block;
+    }
+
+.upper-header img {
+    border-radius: 50%;
+    margin: 24px;
+    width: 174px;
 }
 
 .modal {
@@ -33,7 +51,7 @@
     width: 112px;
 }
 
-.page-content {
+.home .page-content {
     margin: 48px;
 }
 
@@ -57,6 +75,10 @@
     .mdl-layout__header-row {
         height: 56px;
         padding: 0 16px 0 24px;
+    }
+    
+    .upper-header h2 {
+        max-width: 1000px;
     }
     
 }
