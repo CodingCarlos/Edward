@@ -1,20 +1,22 @@
 <ion-content ng-controller="userController as User" style="text-align:center; background-color: #fff;">
 
-	<div style="width: 100%; height: 150px; background-color: #0037ff;">
+	<div id="register-header">
 		<span class="h1">{{'REGISTER' | translate }}</span>
 	</div>
 
-	<div style="margin-top: -50px; width: 100vw; max-width: 500px; display:inline-block; background: #fff; padding: 4px;">
+	<div id="register-modal">
 	<!-- <div style="background: #fff; color: black;"> -->
 
 		<div>
 			<span class="h2">Skills</span>
-			<!-- <span>{{}}</span> -->
 		</div>
 
 		<skill-list-element ng-repeat="skill in User.skill.list" skill="skill"></skill-list-element>
+
+		<div class="buttons-right">
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ui-sref="profile({uid: 1 })">Go!</button>
+		</div>
 		
-		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ui-sref="profile({uid: 1 })">Go!</button>
 	</div>
 
 	<!-- <img ng-src="{{User.user.data.pic}}">

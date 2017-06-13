@@ -7,6 +7,17 @@
 		color: black;
 	}
 
+
+.item {
+	border: none;
+	background-color: #fff;
+	/*margin: 0 16px 0 8px;*/
+	/*padding-right: 24px;*/
+}
+	.item-icon-right .icon {
+		right: 24px;
+	}
+
 .skill-badge {
 	background-color: #4caf50;
 	border: 1px solid grey;
