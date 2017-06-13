@@ -1,4 +1,14 @@
+<div ng-controller="homeController as Home">
+	<div class="bar bar-positive bar-header">
+		<span class="title h1">Edward</span>
+		<div class="button button-icon" ng-click="Home.login()">
+			Entrar
+		</div>
+	</div>
 
-<h1>{{'HELLO' | translate}}</h1>
+	<ion-content class="has-header">
+		<h1>{{'HELLO' | translate}}</h1>
+		<!-- <button ui-sref="register">Entra con Github</button> -->
+</div>
+</ion-content>
 
-<button ui-sref="register">Entra con Github</button>
