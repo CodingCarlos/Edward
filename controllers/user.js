@@ -33,26 +33,31 @@
 			github: 'CodingCarlos'
 		});
 
-		self.skill.list = [
-			{
-				name: 'PHP', 
-				badge: 'PHP',
-				reason: 'PHP-Mailing-List',
-				enabled: true
-			}, 
-			{
-				name: 'HTML', 
-				badge: 'HTML',
-				reason: 'landing-profile',
-				enabled: true
-			}, 
-			{
-				name: 'JS', 
-				badge: 'js',
-				reason: 'jquery-test-repo',
-				enabled: true
-			}
-		];
+
+		if(self.skill.list.length === 0) {
+
+			self.skill.list = [
+				{
+					name: 'PHP', 
+					badge: 'PHP',
+					reason: 'PHP-Mailing-List',
+					enabled: true
+				}, 
+				{
+					name: 'HTML', 
+					badge: 'HTML',
+					reason: 'landing-profile',
+					enabled: true
+				}, 
+				{
+					name: 'JS', 
+					badge: 'js',
+					reason: 'jquery-test-repo',
+					enabled: true
+				}
+			];
+			
+		}
 	}
 	
 })();
