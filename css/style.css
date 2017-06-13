@@ -18,13 +18,15 @@
 
 .upper-header {
     background-color: #0037ff;
-    padding-top: 56px;
+    padding-top: 100px;
     color: white;
+    height: 42vh;
+    padding-left: 48px;
 }
 
     .upper-header h2 {
         color: white;
-        max-width: 316px;
+        /* max-width: 316px; */
         display: inline-block;
     }
 
@@ -76,10 +78,17 @@
     background-color: #24292e !important;
     border-radius: 50px;
     padding: 0 24px;
-    width: 31%;
+    /* width: 31%; */
     height: 6%;
     margin-top: 8px;
     font-size: 18px;
+}
+
+/* github logo */
+.value-prop .mdl-button img {
+    height: 54%;
+    margin-right: 8px;
+    margin-top: -4px;
 }
 
 .home .page-content {
@@ -114,6 +123,10 @@
     box-sizing: border-box;
 }
 
+.bar-footer {
+    height: 72px;
+}
+
 @media screen and (max-width: 1024px) {
     
     .mdl-layout__header-row {
@@ -129,8 +142,66 @@
         margin-bottom: -56px;
     }
     
+    .bar-footer {
+        height: 56px;
+    }
+    
 }
 
+/* mobile queries */
+@media screen and (max-width: 720px) {
+    
+    .mdl-navigation {
+        display: none;
+    }
+    
+    .value-prop {
+        margin-top: 24vw;
+    }
+    
+    .value-prop h1 {
+        font-size: 48px;
+    }
+    
+    .value-prop h2 {
+        font-size: 21px;
+        line-height: 1.5em;
+    }
+    
+    .value-prop .mdl-button {
+        /* width: 256px; */
+    }
+    
+    #register-header {
+        padding: 36px 26px;
+        padding-top: 36px !important;
+        text-align: left;
+        height: 331px !important;
+    }
+    
+    #register-modal {
+        margin-top: -42px;
+        border-radius: 0px !important;
+    }
+    
+    .upper-header {
+        text-align: center;
+        padding: 0px;
+        padding-top: 42px;
+        height: 90vw;
+    }
+    
+        .upper-header img {
+            width: 174px;
+            margin-bottom: 0px;
+        }
+    
+    .upper-header h2 {
+        font-size: 31px;
+        width: 100%;
+    }
+    
+}
 
 /* PROFILE */
 
