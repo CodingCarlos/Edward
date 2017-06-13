@@ -38,11 +38,31 @@
                     <h2>{{::User.user.data.name}}</h2>
                 </div>
 
-                <ul>
-                    <li ng-repeat="skill in User.skill.list" ng-if="skill.enabled">
-                        {{skill.name}}
-                    </li>
-                </ul>
+                <div class="skill-block-center">
+
+                    <div class="h2">Tus habilidades:</div>
+
+                    <div ng-repeat="skill in User.skill.list" ng-if="skill.enabled" class="skill-badge-block">
+                        <div class="skill-badge">
+                            {{skill.badge}}
+                        </div><br>
+                        <strong>{{skill.name}}</strong>
+                    </div>
+
+                    <div class="skill-badge-block" style="cursor: pointer;" ng-click="User.addSkill()">
+                        <div class="skill-badge light">
+                            +
+                        </div><br>
+                        <strong>Añadir otra</strong>
+                    </div>
+                <div id="add-skill">
+                    <h3>Add a new skill</h3>
+                    <input type="text" placeholder="node, python, MySql..." ng-model="data.skill"> <br> 
+                    <input type="text" ng-model="data.prove" placeholder="Prove: A project, repository, or URL"><br> 
+                    <button>Add</button>
+                </div>
+                </div>
+
             </div>
         </main>
     </div>

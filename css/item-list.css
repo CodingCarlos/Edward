@@ -19,7 +19,7 @@
 	}
 
 .skill-badge {
-	background-color: #4caf50;
+	background-color: #24292e;
 	border: 1px solid grey;
 	border-radius: 50%;
 	box-sizing: border-box;
@@ -33,6 +33,10 @@
 	vertical-align: middle;
 	width: 64px;
 }
+	.skill-badge.light {
+		background-color: #f1f0ee;
+		color: #24292e;
+	}
 
 .skill-info {
 	display: inline-block;
@@ -43,4 +47,23 @@
 	.skill-info .description {
 		font-size: .8em;
 		font-style: italic;
+	}
+
+
+.skill-block-center {
+	text-align: center;
+	padding: 16px;
+}
+
+.skill-badge-block {
+	display: inline-block;
+	margin: 16px;
+	text-align: center;
+}
+	.skill-badge-block .skill-badge {
+		font-size: 32px;
+		height: 112px;
+		margin-bottom: 8px;
+		padding-top: 42px;
+		width: 112px;
 	}
