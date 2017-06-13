@@ -1,19 +1,23 @@
-<ion-content>
-	<h1>{{'REGISTER' | translate }}</h1>
+<ion-content ng-controller="userController as User" style="text-align:center;">
 
-	<img src="https://avatars3.githubusercontent.com/u/7394623?v=3&s=200">
-	<input type="text" value="carlos hernandez">
-
-	<div class="list card">
-
-		<a class="item item-icon-right">
-			HTML
-			<i class="icon ion-close"></i>
-			<i class="icon ion-plus" ng-hide="true"></i>
-		</a>
-
+	<div style="position: absolute; top: 0; left:0; width: 100%; height: 150px; background-color: #ff9800;">
+		<span class="h1">{{'REGISTER' | translate }}</span>
 	</div>
 
-	<button ui-sref="profile({uid: 1 })">Go!</button>
+	<div style="margin-top: 100px; width: 100vw; max-width: 500px; display:inline-block;">
+		<skill-list-element ng-repeat="skill in User.skill.list" skill="skill">
+		
+		<button ui-sref="profile({uid: 1 })">Go!</button>
+	</div>
+
+	<!-- <img ng-src="{{User.user.data.pic}}">
+	<input type="text" ng-model="User.user.data.name">
+ -->
+	<!-- <div class="list card"> -->
+
+		<!-- <skill-list-element ng-repeat="skill in User.skill.list" skill="skill"> -->
+
+	<!-- </div> -->
+
 
 </ion-content>

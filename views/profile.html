@@ -1,1 +1,13 @@
-perfil del user
+<ion-content ng-controller="userController as User">
+	<h1>User Profile</h1>
+
+	<img ng-src="{{User.user.data.pic}}">
+	<h2>{{::User.user.data.name}}</h2>
+
+	<ul>
+		<li ng-repeat="skill in User.skill.list" ng-if="skill.enabled">
+			{{skill.name}}
+		</li>
+	</ul>
+
+</ion-content>
