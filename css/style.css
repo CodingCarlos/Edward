@@ -103,4 +103,6 @@
 #add-skill {
     max-width: 300px;
     display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 32px;
 }
