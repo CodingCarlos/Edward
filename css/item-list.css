@@ -1,3 +1,46 @@
 .item.disabled {
-	opacity: .5;
+	/*opacity: .5;*/
+	background-color: lightgrey;
+	color: grey;
 }
+	.item.disabled i {
+		color: black;
+	}
+
+
+.item {
+	border: none;
+	background-color: #fff;
+	/*margin: 0 16px 0 8px;*/
+	/*padding-right: 24px;*/
+}
+	.item-icon-right .icon {
+		right: 24px;
+	}
+
+.skill-badge {
+	background-color: #4caf50;
+	border: 1px solid grey;
+	border-radius: 50%;
+	box-sizing: border-box;
+	color: #fff;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	height: 64px;
+	padding-top: 21px;
+	text-align: center;
+	vertical-align: middle;
+	width: 64px;
+}
+
+.skill-info {
+	display: inline-block;
+	padding-left: 8px;
+	vertical-align: middle;
+}
+
+	.skill-info .description {
+		font-size: .8em;
+		font-style: italic;
+	}

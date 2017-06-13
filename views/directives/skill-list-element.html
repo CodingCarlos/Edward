@@ -1,6 +1,13 @@
-<a class="item item-icon-right" ng-class="skill.enabled ? '' : 'disabled'">
-	<strong>{{skill.name}}</strong><br> 
-	<span class="description">Por tu repositorio {{skill.reason}}</span>
+<a class="item item-icon-right" ng-class="skill.enabled ? '' : 'disabled'" style="text-align: left;">
+
+	<div class="skill-badge">
+		{{skill.badge}}
+	</div>
+
+	<div class="skill-info">
+		<strong>{{skill.name}}</strong><br> 
+		<span class="description">Por tu repositorio <strong>{{skill.reason}}</strong></span>
+	</div>
 	<i class="icon ion-close" ng-show="skill.enabled" ng-click="skill.enabled = false"></i>
 	<i class="icon ion-plus" ng-show="!skill.enabled" ng-click="skill.enabled = true"></i>
 </a>
