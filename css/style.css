@@ -1,0 +1,62 @@
+.pane {
+    background-color: #0037ff;
+}
+
+.modal {
+    background-color: white;
+    max-width: 400px;
+    border-radius: 25px;
+    /* height: 100vh; */
+    padding: 10%;
+    box-sizing: border-box;
+    /* position: absolute; */
+    /* text-align: center; */
+    margin: 200px 200px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+}
+
+.modal button {
+    border-radius: 50px;
+    border: none;
+    padding: 8px 12px;
+    width: 200px;
+    background-color: #24292e;
+    color: white;
+}
+
+.mdl-layout__header {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.mdl-layout__header .mdl-button {
+    width: 112px;
+}
+
+.page-content {
+    margin: 48px;
+}
+
+.value-prop {
+    text-align: left;
+    margin-top: 100px;
+}
+
+    .value-prop h1 {
+        font-family: truenobold;
+        color: white;
+    }
+
+    .value-prop h2 {
+        font-family: truenoregular;
+        color: white;
+    }
+
+@media screen and (max-width: 1024px) {
+    
+    .mdl-layout__header-row {
+        height: 56px;
+        padding: 0 16px 0 24px;
+    }
+    
+}
