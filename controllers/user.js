@@ -21,14 +21,17 @@
 		self.skill.list = [
 			{
 				name: 'PHP', 
+				badge: 'PHP',
 				enabled: true
 			}, 
 			{
 				name: 'HTML', 
+				badge: 'HTML',
 				enabled: true
 			}, 
 			{
 				name: 'JS', 
+				badge: 'js',
 				enabled: true
 			}
 		];

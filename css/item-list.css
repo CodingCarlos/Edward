@@ -1,3 +1,34 @@
 .item.disabled {
-	opacity: .5;
+	/*opacity: .5;*/
+	background-color: lightgrey;
+	color: grey;
 }
+	.item.disabled i {
+		color: black;
+	}
+
+.skill-badge {
+	background-color: #f1f033;
+	border: 1px solid grey;
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	height: 64px;
+	padding-top: 21px;
+	text-align: center;
+	vertical-align: middle;
+	width: 64px;
+}
+
+.skill-info {
+	display: inline-block;
+	padding-left: 8px;
+	vertical-align: middle;
+}
+
+	.skill-info .description {
+		font-size: .8em;
+		font-style: italic;
+	}
