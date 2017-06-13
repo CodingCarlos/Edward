@@ -8,7 +8,12 @@
 }
 
 .home {
-    background-color: #0037ff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0037ff+0,0dc0ff+100 */
+    background: #0037ff; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #0037ff 0%, #0dc0ff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #0037ff 0%,#0dc0ff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #0037ff 0%,#0dc0ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0037ff', endColorstr='#0dc0ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .upper-header {
@@ -95,6 +100,19 @@
         font-family: truenoregular;
         color: white;
     }
+
+.grey-toast {
+    position: absolute;
+    bottom: 24px;
+    border-radius: 50px;
+    background-color: grey;
+    height: 72px;
+    /* width: 100%; */
+    color: white;
+    padding: 24px;
+    margin: 0px 24px;
+    box-sizing: border-box;
+}
 
 @media screen and (max-width: 1024px) {
     
