@@ -49,18 +49,19 @@
                         <strong>{{skill.name}}</strong>
                     </div>
 
-                    <div class="skill-badge-block" style="cursor: pointer;" ng-click="User.addSkill()">
+                    <div class="skill-badge-block" style="cursor: pointer;" ng-click="add = !add;">
                         <div class="skill-badge light">
                             +
                         </div><br>
                         <strong>Añadir otra</strong>
+                    </div> <br>
+
+                    <div id="add-skill" ng-show="add == true">
+                        <h3>Add a new skill</h3>
+                        <input type="text" placeholder="node, python, MySql..." ng-model="data.skill"> <br> 
+                        <input type="text" ng-model="data.prove" placeholder="Prove: A project, repository, or URL"><br> 
+                        <button>Add</button>
                     </div>
-                <div id="add-skill">
-                    <h3>Add a new skill</h3>
-                    <input type="text" placeholder="node, python, MySql..." ng-model="data.skill"> <br> 
-                    <input type="text" ng-model="data.prove" placeholder="Prove: A project, repository, or URL"><br> 
-                    <button>Add</button>
-                </div>
                 </div>
 
             </div>
