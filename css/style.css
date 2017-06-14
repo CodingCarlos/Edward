@@ -97,7 +97,7 @@
 
 .value-prop {
     text-align: center;
-    margin-top: 254px;
+    margin-top: 196px;
 }
 
     .value-prop h1 {
@@ -176,7 +176,6 @@
         padding: 36px 26px;
         padding-top: 36px !important;
         text-align: left;
-        height: 331px !important;
     }
     
     #register-modal {
@@ -199,6 +198,11 @@
     .upper-header h2 {
         font-size: 31px;
         width: 100%;
+    }
+    
+    .value-prop .mdl-button {
+        height: 42px;
+        width: 254px;
     }
     
 }
