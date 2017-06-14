@@ -127,6 +127,13 @@
     height: 72px;
 }
 
+.bar-footer .mdl-button {
+    box-shadow: none;
+    font-weight: 600;
+}
+
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 1024px) {
     
     .mdl-layout__header-row {

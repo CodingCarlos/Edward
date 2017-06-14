@@ -22,9 +22,11 @@
 				console.log(firebaseUser.user.photoURL);
 
 				user.set({
-					name: firebaseUser.user.displayName || 'CodingCarlos',
-					pic: firebaseUser.user.photoURL || 'https://avatars3.githubusercontent.com/u/7394623?v=3&s=200'
+					name: firebaseUser.user.displayName || 'developer',
+					pic: firebaseUser.user.photoURL || 'http://gamidev.storage.googleapis.com/profile/4897391555641344/glSNWSko4O9DtnJ9iNGGj8KlAAQ1h5JL.png'
 				});
+                
+                console.log(firebaseUser);
 
 				$state.go('register');
 
