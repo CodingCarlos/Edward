@@ -16,7 +16,7 @@ if(device == 'ios') {
 }
 
 
-angular.module('app', ['ionic','debounce', 'pascalprecht.translate'])
+angular.module('app', ['ionic', 'firebase', 'debounce', 'pascalprecht.translate'])
 								// 'ionic-native-transitions',
 	.config(function($ionicConfigProvider, $stateProvider, $urlRouterProvider, $translateProvider) {
 
@@ -37,6 +37,18 @@ angular.module('app', ['ionic','debounce', 'pascalprecht.translate'])
 		}
 
 		$translateProvider.preferredLanguage(lang);
+
+
+		var config = {
+			apiKey: "AIzaSyCo607FOp3ctoBpKeLYzZ2-44fA8Q32uU0",
+			authDomain: "edward-f129d.firebaseapp.com",
+			databaseURL: "https://edward-f129d.firebaseio.com",
+			projectId: "edward-f129d",
+			storageBucket: "edward-f129d.appspot.com",
+			messagingSenderId: "988680848575"
+		};
+		firebase.initializeApp(config);
+		
 
 		/* STATES */
 
