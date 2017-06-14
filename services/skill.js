@@ -53,8 +53,8 @@
 				index = search(elem, 'index');
 			}
 
-			self.list[index].enabled = true;
 
+			self.list[index].enabled = true;
 		}
 
 		function disable(elem) {
@@ -68,7 +68,6 @@
 			}
 
 			self.list[index].enabled = false;
-
 		}
 
 

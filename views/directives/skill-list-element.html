@@ -8,6 +8,6 @@
 		<strong>{{skill.name}}</strong><br> 
 		<span class="description">Por tu repositorio <strong>{{skill.reason}}</strong></span>
 	</div>
-	<i class="icon ion-close" ng-show="skill.enabled" ng-click="skill.enabled = false"></i>
-	<i class="icon ion-plus" ng-show="!skill.enabled" ng-click="skill.enabled = true"></i>
+	<i class="icon ion-close" ng-show="skill.enabled" ng-click="skills.disable(skill.name)"></i>
+	<i class="icon ion-plus" ng-show="!skill.enabled" ng-click="skills.enable(skill.name)"></i>
 </a>

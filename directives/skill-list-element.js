@@ -5,7 +5,7 @@
 		.directive('skillListElement', skillListElementDirective);
 
 
-	function skillListElementDirective() {
+	function skillListElementDirective(skill) {
 
 		return {
 
@@ -18,6 +18,8 @@
 			// replace: true,
 
 			link: function(scope, element, attrs) {
+
+				scope.skills = skill;
 
 				// if(ionic.Platform.isAndroid()) {
 				// 	scope.text = '';

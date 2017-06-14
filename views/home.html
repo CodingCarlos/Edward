@@ -11,7 +11,9 @@
 				<a class="mdl-navigation__link" href="">About us</a>
 				<a class="mdl-navigation__link" href="">Jobs</a>
 			</nav>
-            <button class="mdl-button mdl-js-button" ui-sref="profile" style="color: white;">
+
+            <!-- <button class="mdl-button mdl-js-button" ui-sref="register" style="color: white;"> -->
+            <button class="mdl-button mdl-js-button" ng-click="signIn()" style="color: white;">
 				Inicia sesión
 			</button>
 			<!-- Accent-colored raised button with ripple -->
@@ -33,10 +35,11 @@
 		<div class="page-content">  
 			<div class="value-prop">
                 <h1>We speak developer</h1>
-                <h2>Edward translates your GitHub to Human Resources</h2>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ui-sref="register">
+                <h2>Edward translates your GitHub to human resources lenguage</h2>
+                <!-- <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ui-sref="register"> -->
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="signIn()">
                     <img src="img/git-logo.png">
-                        <span>Entra con GitHub</span>
+                    <span>Entra con GitHub</span>
                 </button>
 			</div>
 		</div>
