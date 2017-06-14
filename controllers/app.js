@@ -22,7 +22,7 @@
 			// console.log(localSession);
 		} else {
 			console.error('THERE IS NO SESSION');
-			alert(123);
+			// alert(123);
 		}
 
 		function logout() {
